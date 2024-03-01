@@ -1,0 +1,95 @@
+.calendario{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    height: 500px;
+}
+.containerCalendar{
+    width: 450px;
+    background: white;
+    border-radius: 10px; 
+}
+.containerCalendar header{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px 10px;
+    justify-content: space-between;
+}
+header .diaActual{
+    font-size:1.45rem ;
+    font-weight: 500;
+}
+header .icons span{
+    height: 38px;
+    width: 38px;
+    color: #878787;
+    font-size: 1.9rem;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+header .icons span:hover{
+    background: rgb(197, 194, 194);
+}
+header .icons span:last-child{
+    margin-right: -10px;
+}
+
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+.calendar{
+    padding: 20px;
+}
+.calendar .Dias{
+    margin-bottom: 20px;
+}
+.calendar .Semana li{
+    font-weight: 500;
+}
+.calendar .Dias li{
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.Dias li.inactivo{
+    color: #aaa;
+}
+.calendar ul li{
+    position: relative;
+    width: calc(100%/7);
+}
+.calendar .Dias li::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.Dias li:hover::before{
+    background: rgb(197, 194, 194);
+}
+.Dias li.activo::before{
+    background: rgb(240, 124, 143);
+}
+.historia{
+    font-size: 17.5px;
+    padding-left: 15px ;
+    line-height: 25px;
+    letter-spacing: 1px; /* Ajustar el espaciado entre letras */
+    word-spacing: 4px;
+    width: 100%;
+}

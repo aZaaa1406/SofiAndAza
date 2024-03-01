@@ -3,35 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- Estillos -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/calendar.css">
+    <link rel="stylesheet" href="CSS/carrusel.css">
+    <!-- Fin estilos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?
+    family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <title>SofiAndAza</title>
     
 </head>
 <body>
     <div class="container">
-        <div class="containerCarrusel">
-            <link rel="stylesheet" href="style.css">
-            <div class="carruseles" id="slider">
-                <section class="sliderSection">
-                    <img src="img/soff.jfif" alt="">
-                </section>
-                <section class="sliderSection">
-                    <img src="img/sofi2.jfif" alt="">
-                </section>
-                <section class="sliderSection">
-                    <img src="img/sofi3.jfif" alt="">
-                </section>
+        <div class="superior">
+            <div class="titulo">
+                <h1>Sofi And Aza</h1>
             </div>
-            <div class="btnLeft">
-                <i class='bx bx-chevron-left' ></i>
+            <div class="kittyLeft">
+                <img src="img/kittyCupido2.png" alt="" width="150px" height="150px">
             </div>
-            <div class="btnRight">
-                <i class='bx bx-chevron-right'></i>
-    
+            <div class="kittyRight">
+                <img src="img/kittyCupido.png" alt="" width="150px" height="150px">
             </div>
-            <script src="script.js"></script>
         </div>
+        <div class="textIntro">
+            <b>
+                Esta página la hago por dos motivos, uno para aprender y dominar web, dos y más importante, 
+                juntar las dos cosas que me gustan... programar y tu mi amor, de verdad que es linda está
+                relación y solo me queda darte las gracias por estar conmigo, todo lo que siento por ti lo
+                plasmare aquí
+            </b>
+        </div>
+
+        <div class="calendario">
+            <div class="containerCalendar">
+                <header>
+                    <p class="diaActual">Noviembre 2023</p>
+                    <div class="icons">
+                        <span class="material-simbols-rounded">
+                            <i class='bx bx-chevron-left' ></i>
+                        </span>
+                        <span class="material-simbols-rounded">
+                            <i class='bx bx-chevron-right'></i>
+                        </span>
+                    </div>
+                </header>
+                <div class="calendar">
+                    <ul class="Semana">
+                        <li>Dom</li>
+                        <li>Lun</li>
+                        <li>Mar</li>
+                        <li>Mie</li>
+                        <li>Jue</li>
+                        <li>Vie</li>
+                        <li>Sab</li>
+                    </ul>
+                    <ul class="Dias">
+                        <li class="inactivo" >29</li>
+                        <li class="inactivo" >30</li>
+                        <li class="inactivo" >31</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li class="activo">19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li class="inactivo">1</li>
+                        <li class="inactivo">2</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="historia">
+                Bueno empezamos con nuestra linda historia aunque nos conocimos un 17 de septiembre y te confesé mi amor un 3 de noviembre
+                finalmente nos hicimos novios un lindo domingo 19 de noviembre y no sabes lo feliz que he sido desde ese dia, de verdad que
+                contigo todo es lindo, contigo la vida tiene sentido. Desde que estoy contigo los dias se hicieron menos tristes, además de que 
+                un día despues de formalizar nuestra relacion tuvimos nuestra primera salidita y no sabes lo feliz que fui en ese momento 
+                darte de comer en el cine y comerte a besitos fue lo más lindo de esa semana
+            </p>
+        </div>
+            
+        <div class="carrusel">
+            <div class="containerCarrusel">
+                <div class="carruseles" id="slider">
+                    <section class="sliderSection">
+                        <img src="img/soff.jfif" alt="">
+                    </section>
+                    <section class="sliderSection">
+                        <img src="img/sofi2.jfif" alt="">
+                    </section>
+                    <section class="sliderSection">
+                        <img src="img/sofi3.jfif" alt="">
+                    </section>
+                </div>
+                <div class="btnLeft">
+                    <i class='bx bx-chevron-left' ></i>
+                </div>
+                <div class="btnRight">
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+                <script src="Scripts/carrusel.js"></script>
+            </div>
+        </div>
+        
     </div>
     
     

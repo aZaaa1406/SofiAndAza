@@ -10,7 +10,9 @@ setInterval(() => {
     moveToRight()
 },3000);
 
+//Variable de operacion para mover imagenes
 let operacion = 0;
+//Contador de imagenes
 let counter = 0;
 //Variable para calcular el porcentaje que ocupara cada imagen
 let widthImg = 100/sliderSection.length;
