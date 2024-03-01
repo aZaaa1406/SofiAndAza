@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Oxygen, system-ui, -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto,  
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content     : center;
+    background-color: pink;
+    padding: 20px;
+}
+.containerCarrusel{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: antiquewhite;
+    box-shadow: 0 8px 32px 0 rgba(#000000);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.carruseles{
+    width: 300%;
+    height: 100%;
+    display: flex;
+
+}
+.sliderSection {
+    width: calc(100% /3);
+}
+/* Propiedades de las section */
+.sliderSection img{
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Propiedades de los botones */
+.btnLeft,
+.btnRight{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #00000081;
+    transform: translate(0, -50%);
+    transition: .5 ease;
+    user-select: none;
+}
+/* Al pasar el cursor los botones cambiaran su backgrpund
+asi como su color de fuente */
+.btnLeft:hover,
+.btnRight:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+/* Alinear cada boton aus posicion */
+.btnLeft{
+    left: 10px;
+}
+.btnRight{
+    right: 10px;
+}
