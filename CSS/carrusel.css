@@ -4,8 +4,8 @@
 }
 .carrusel{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
 }
 .containerCarrusel{
     position: relative;
@@ -18,13 +18,13 @@
     
 }
 .carruseles{
-    width: 300%;
+    width: 700%;
     height: 100%;
     display: flex;
 
 }
 .sliderSection {
-    width: calc(100% /3);
+    width: calc(100% /7);
 }
 /* Propiedades de las section */
 .sliderSection img{
@@ -64,4 +64,15 @@ asi como su color de fuente */
 }
 .btnRight{
     right: 10px;
+}
+.diciembre{
+    align-content: left;
+    justify-content: left;
+    width: calc(100% - 500px);
+    font-size: 17.5px;
+    padding-left: 15px ;
+    line-height: 25px;
+    letter-spacing: 1px; /* Ajustar el espaciado entre letras */
+    word-spacing: 4px;
+    height: 1px;
 }

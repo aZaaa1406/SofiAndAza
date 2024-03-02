@@ -7,7 +7,7 @@
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{ 
-    background-color: pink;
+    background: linear-gradient(white, pink);
     padding: 20px;
 }
 .superior{
